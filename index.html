@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #eee;
+        }
+        .login-container {
+            max-width: 400px;
+            margin: 80px auto;
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .login-container h2 {
+            text-align: center;
+            color: #585858;
+            font-weight: normal;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .login-container input[type="text"], .login-container input[type="password"] {
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            width: 100%;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .login-container input[type="submit"] {
+            border-radius: 5px;
+            color: white;
+            background-color: #4480c5;
+            cursor: not-allowed;
+            padding: 12px 15px;
+            border: 1px solid #4480c5;
+            font-size: 1rem;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #3868ad;
+            border-color: #3868ad;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <input type="text" name="username" placeholder="Username" disabled>
+            <input type="password" name="password" placeholder="Password" disabled>
+            <input type="submit" value="Login" disabled>
+            <div class="text-center">
+                <p>Don't have an account yet? <a href="register.html" style="color: #4480c5;">Register</a>.</p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
